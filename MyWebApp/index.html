@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+    <h1>My Website</h1>
+    <div id="login">
+        <label for="user" id="user-label">User name:</label>
+        <input type="text" id="user">
+        <span id="message"></span><br>
+        <input type="button" id="btn_login" value="Log In">
+    </div>
+    <div id="logout" class="hide">
+        <h4>Welcome, <span id="name"></span>!</h4>
+        <input type="button" id="btn_logout" value="Log Out">
+    </div>
+   	<script src="login.js"></script>
+</body>
+</html>

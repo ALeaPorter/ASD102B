@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Contact Info</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body id="confirm">
+    <h1>My Contact Info</h1>
+    <div>
+        <label for="name">Name:</label>
+        <label id="lbl_name" class="left"></label>
+    </div>
+    <div>
+        <label for="email">E-Mail:</label>
+        <label id="lbl_email" class="left"></label>
+    </div>
+    <div>
+        <label for="phone">Mobile phone:</label>
+        <label id="lbl_phone" class="left"></label>
+    </div>
+    <div>
+        <label for="zip">ZIP Code:</label>
+        <label id="lbl_zip" class="left"></label>
+    </div>
+    <div>
+        <label>Date of Birth:</label>
+        <label id="lbl_dob" class="left"></label>
+    </div>
+    <a href="index.html">Back to Contact Info</a>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "contact": "./lib_contact.js"
+                "dob": "./lib_dob.js"
+            }
+        }
+    </script>
+    <script src="contact.js" type="module"></script>
+</body>
+</html>

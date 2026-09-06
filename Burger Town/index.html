@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Burger Town</title>
+    <link rel="stylesheet" href="burger.css">
+</head>
+<body>
+    <div id="menu">
+        <h1>Burger Town Menu</h1>
+
+        <h2>Burger</h2>
+        <div>
+            <label><b>Type</b></label>
+            <input type="radio" id="burger_regular" name="burger_type" value="regular">
+            <label for="burger_regular">Regular</label>
+            <input type="radio" id="burger_cheese" name="burger_type" value="cheese">
+            <label for="burger_cheese">Cheese</label>
+        </div>
+        <div>
+            <label><b>Size</b></label>
+            <input type="radio" id="burger_single" name="burger_size" value="single">
+            <label for="burger_single">Single</label>
+            <input type="radio" id="burger_double" name="burger_size" value="double">
+            <label for="burger_double">Double</label>
+        </div>
+        <div id="toppings">
+            <label><b>Toppings</b></label><br>
+            <input type="checkbox" id="tomatoes" value="tomatoes">
+            <label for="tomatoes">Tomatoes</label>
+            <input type="checkbox" id="lettuce" value="lettuce">
+            <label for="lettuce">Lettuce</label>
+            <input type="checkbox" id="pickles" value="pickles">
+            <label for="pickles">Pickles</label>
+            <br>
+            <input type="checkbox" id="onions" value="onions">
+            <label for="onions">Onions</label>
+            <input type="checkbox" id="mustard" value="mustard">
+            <label for="mustard">Mustard</label>
+            <input type="checkbox" id="ketchup" value="ketchup">
+            <label for="ketchup">Ketchup</label>
+        </div>
+
+        <h2>Drink</h2>
+        <div>
+            <label><b>Type</b></label>
+            <input type="radio" id="water" name="drink_type" value="water">
+            <label for="water">Water</label>
+            <input type="radio" id="tea" name="drink_type" value="tea">
+            <label for="tea">Tea</label>
+            <input type="radio" id="soda" name="drink_type" value="soda">
+            <label for="soda">Soda</label>
+        </div>
+        <div>
+            <label><b>Size</b></label>
+            <input type="radio" id="drink_small" name="drink_size" value="small">
+            <label for="drink_small">Small</label>
+            <input type="radio" id="drink_medium" name="drink_size" value="medium">
+            <label for="drink_medium">Medium</label>
+            <input type="radio" id="drink_large" name="drink_size" value="large">
+            <label for="drink_large">Large</label>
+        </div>
+
+        <h2>Fries</h2>
+        <div>
+            <label><b>Type</b></label>
+            <input type="radio" id="fry_regular" name="fry_type" value="regular">
+            <label for="fry_regular">Regular</label>
+            <input type="radio" id="fry_curly" name="fry_type" value="curly">
+            <label for="fry_curly">Curly</label>
+        </div>
+        <div>
+            <label><b>Size</b></label>
+            <input type="radio" id="fry_small" name="fry_size" value="small">
+            <label for="fry_small">Small</label>
+            <input type="radio" id="fry_medium" name="fry_size" value="medium">
+            <label for="fry_medium">Medium</label>
+            <input type="radio" id="fry_large" name="fry_size" value="large">
+            <label for="fry_large">Large</label>
+        </div>
+
+        <div id="buttons">
+            <input type="button" value="Add Order" name="add_order" id="add_order">
+            <input type="button" value="Clear Order" name="clear_order" id="clear_order">
+        </div>
+    </div> 
+
+    <div id="order">
+        <h1>Order</h1>
+        <div id="order_details"></div>
+    </div>
+
+    <div class="clear"></div>
+
+    <script src="lib_items.js"></script>
+    <script src="lib_order.js"></script>
+    <script src="burger.js"></script>
+</body>
+</html>

@@ -3,11 +3,11 @@
 const getElement = selector => document.querySelector(selector);
 
 const displayScores = scores => {   
-    // filter scores
+    // Filter scores
     const minScore = Number(getElement("#filter").value);
 
     const filteredScores = scores.filter(entry => entry[2] >= minScore);
-    // sort filtered scores
+    // Sort filtered scores
     const sortBy = getElement("#sort").value;
     if (sortBy === "fname") {
         filteredScores.sort((a, b) => a[0].localeCompare(b[0]));
@@ -18,16 +18,16 @@ const displayScores = scores => {
     else if (sortBy === "score") {
         filteredScores.sort((a, b) => a[2] - b[2]);
     }
-    // get total of filtered scores and build display string
+    // Get total of filtered scores and build display string
     let total = 0;
     let displayString = "";
     filteredScores.forEach(entry => {
         displayString += entry[0] + ", " + entry[1] + ", " + entry[2] + "\n";
         total += entry[2];
     });
-    // calculate the average 
+    // Calculate average
     const avg = filteredScores.length > 0 ? total / filteredScores.length : 0;
-    // display
+    // Display
     getElement("#score_list").value = displayString;
     getElement("#avg").textContent = avg.toFixed(2);
 };

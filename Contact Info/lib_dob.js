@@ -1,6 +1,6 @@
 export default class Dob extends Date {
     constructor(universalFormatString) {
-        if (universalFormatString.includs("T")) {
+        if (universalFormatString.includes("T")) {
             universalFormatString += "T00:00:00";  // add time to correct UTC/local time issue
         }
         // call constructor of Date superclass

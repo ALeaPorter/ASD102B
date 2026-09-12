@@ -17,7 +17,7 @@ const displayConfirmPage = () => {
     getElement("#lbl_email").textContent = contact.email;
     getElement("#lbl_phone").textContent = contact.phone;
     getElement("#lbl_zip").textContent = contact.zip;
-    getElement("#lbl_dob").textContent = contact.dob.toUniversalFormatString();
+    getElement("#lbl_dob").textContent = contact.dob.toDateString();
 };
 const clearMessages = () => {
     const inputs = document.querySelectorAll("input");
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         // display data from web storage in contact form
         displayContact();
-        
+
         form.addEventListener("submit", evt => {
             clearMessages();  
 
@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if(!form.checkValidity()) { 
                 evt.preventDefault();
             } else {
+                console.log("Saving contact:", contact);
                 saveContact(contact);
             }
         });

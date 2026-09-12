@@ -2,8 +2,8 @@ import Dob from 'dob';
 
 // Made contact into a class
 
-export default class Contact {
-    constructor(name = "", email = "", phone = "", zip = "", dob = "") {
+export default class Contact{
+    constructor(name="", email="", phone="", zip="", dob="") {
         this.name = String(name).trim();
         this.email = String(email).trim();
         this.phone = String(phone).trim();

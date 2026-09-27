@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Connect Four</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1>Connect Four!</h1>
+        <div>
+            <span id="message"></span>
+            <canvas id="game_piece" width="80" height="80" draggable="true">
+                The round game piece.
+            </canvas>
+            <button id="new_game">New Game</button>
+        </div>   
+        <div>
+            <canvas id="game_board" width="700" height="650">
+                The game board.
+            </canvas>
+        </div>
+
+        <script src="lib_game_piece.js"></script>
+        <script src="lib_game.js"></script>
+        <script src="connect_four.js"></script>
+    </body>
+</html>

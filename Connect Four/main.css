@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    margin: 1em auto;
+    width: 700px;
+    padding: 1em 2em 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+    text-align: center;
+}
+h1 {
+    color: cornflowerblue;
+    margin: 1em 0;
+    text-align: left;
+}
+#message {
+    float: left;
+    font-weight: bold;
+}
+#new_game {
+    float: right;
+}
